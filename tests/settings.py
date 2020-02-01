@@ -6,7 +6,7 @@ from oscar.defaults import *  # noqa
 location = lambda x: os.path.join(
     os.path.dirname(os.path.realpath(__file__)), x)
 
-ALLOWED_HOSTS = ['test', '.oscarcommerce.com']
+ALLOWED_HOSTS = ['test', '.oscarcommerce.com', 'perf-django.eastus.cloudapp.azure.com']
 
 DATABASES = {
     'default': {
