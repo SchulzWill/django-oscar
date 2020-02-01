@@ -23,6 +23,7 @@ USER django
 RUN make build_sandbox
 
 ENV NEW_RELIC_CONFIG_FILE /app/newrelic.ini
+ENV NEW_RELIC_APP_NAME Django Commerce
 
 RUN cp --remove-destination /app/src/oscar/static/oscar/img/image_not_found.jpg /app/sandbox/public/media/
 
